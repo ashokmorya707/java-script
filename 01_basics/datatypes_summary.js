@@ -45,3 +45,27 @@ console.log(typeof userEmail)
 console.log(typeof myFunction)
 console.log(typeof anotherId)
 console.log(typeof myObj)
+
+// ++++++++++++++++++++++++++++++++++++++++
+
+// Stack (primitive) -> copy,    Heap (non-primitive) -> reference
+
+let anExample = "mynameisAshok"
+
+let anotherExample = anExample
+anotherExample = "hithisIsAcopyOforiginal"
+
+console.log(anotherExample)
+console.log(anExample)
+
+let user1 = {
+    email: "user@gmail.com",
+    upi: "user@upi"
+}
+
+let user2 = user1
+
+user2.email = "newUser2@gmail.com"
+
+console.log(user1.email)
+console.log(user2.email)
